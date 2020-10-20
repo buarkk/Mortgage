@@ -1,25 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
         <TextView
-            android:id="@+id/textView1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Home Price"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/ToplamKredi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="bir değer"
+            android:textSize="20sp" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="xx"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:paddingLeft="30dp"
+            android:text="$"
+            android:textSize="20sp" />
+
     </LinearLayout>
+
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
         <TextView
-            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Down Payment"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/OnOdeme"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="bir değer"
+            android:textSize="20sp" />
+
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="xxsads"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="$"
+            android:textSize="20sp" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Length of loan"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/ToplamVade"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="bir değer"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="year"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Interest rate"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/YıllıkFaiz"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="bir değer"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="%"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/AylıkOdeme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="AYLIK ODEME"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CALCULATE" />
+
+
+    </LinearLayout>
+
 </LinearLayout>
