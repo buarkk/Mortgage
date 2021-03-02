@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="20dp">
+
+    <TextView
+        android:id="@+id/test_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="deneme" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:gravity="left|center"
         android:orientation="horizontal">
 
@@ -20,18 +28,29 @@
 
         <EditText
             android:id="@+id/ToplamKredi"
-            android:layout_width="100dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:hint="bir değer"
             android:textSize="20sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:text="$"
-            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:max="10000000"
+            android:progress="0"
+            android:progressDrawable="@drawable/track"
+            android:thumb="@drawable/thumb" />
 
     </LinearLayout>
 
@@ -39,6 +58,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:gravity="left|center"
         android:orientation="horizontal">
 
@@ -51,17 +71,10 @@
 
         <EditText
             android:id="@+id/OnOdeme"
-            android:layout_width="100dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:hint="bir değer"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:text="$"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -69,6 +82,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:gravity="left|center"
         android:orientation="horizontal">
 
@@ -87,18 +101,24 @@
             android:hint="bir değer"
             android:textSize="20sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
+
+        <Spinner
+            android:id="@+id/spinnertime"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:text="year"
-            android:textSize="20sp" />
+            android:scrollbarSize="3dp"
+
+            />
+
+
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:gravity="left|center"
         android:orientation="horizontal">
 
@@ -128,23 +148,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
 
         <TextView
             android:id="@+id/AylıkOdeme"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:text="AYLIK ODEME"
-            android:textSize="30sp"
-            android:gravity="center"/>
+            android:textSize="30sp" />
 
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
         <Button
             android:id="@+id/calculate"

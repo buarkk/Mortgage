@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mortgage</string>
+
+    <string-array name="time">
+        <item>year</item>
+        <item>month</item>
+
+    </string-array>
 </resources>
